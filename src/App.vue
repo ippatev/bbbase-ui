@@ -1,11 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <base-button color="black">Primary Button</base-button>
 </template>
 
 <script>
+import BaseButton from './components/BaseButton.vue';
 export default {
   name: 'App',
+  components: {
+    BaseButton,
+  },
 };
 </script>
 
-<style></style>
+<style lang="scss">
+body {
+  font-size: 16px;
+}
+</style>
