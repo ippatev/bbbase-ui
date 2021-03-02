@@ -1,5 +1,6 @@
 <template>
-  <base-button color="black">Primary Button</base-button>
+  <base-button @click="clickHandler">First Button</base-button>
+  <base-button class="mt-8" @click="clickHandler">Second Button</base-button>
 </template>
 
 <script>
@@ -9,11 +10,14 @@ export default {
   components: {
     BaseButton,
   },
+  methods: {
+    clickHandler(t) {
+      alert(`${t.target.textContent} clicked!`);
+    },
+  },
 };
 </script>
 
 <style lang="scss">
-body {
-  font-size: 16px;
-}
+@import '@/assets/style/style.scss';
 </style>
