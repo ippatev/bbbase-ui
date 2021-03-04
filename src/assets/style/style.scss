@@ -1,6 +1,22 @@
 :root {
+  box-sizing: border-box;
   font-size: 16px;
 }
 
-@import './btn';
+body {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 @import './spacing';
+@import './btn';
+@import './select';
+
+.container {
+  padding: 2em;
+}
