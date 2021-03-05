@@ -1,0 +1,11 @@
+.bbb-text-field {
+  display: inline-block;
+  width: 292px;
+  max-width: 292px;
+  line-height: 52px;
+  padding: 0 2rem;
+  border: 1px solid black;
+  &:focus {
+    outline: none;
+  }
+}
