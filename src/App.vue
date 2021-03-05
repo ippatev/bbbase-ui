@@ -2,12 +2,16 @@
   <div class="container">
     <base-button @click="clickHandler">First Button</base-button>
     <base-select @input="selectHandler" :options="selects" class="ml-16" />
+    <base-checkbox class="ml-16" />
+    <base-radio class="ml-16" />
   </div>
 </template>
 
 <script>
 import BaseButton from './components/BaseButton.vue';
 import BaseSelect from './components/BaseSelect.vue';
+import BaseCheckbox from './components/BaseCheckbox.vue';
+import BaseRadio from './components/BaseRadio.vue';
 export default {
   name: 'App',
   data() {
@@ -21,6 +25,8 @@ export default {
   components: {
     BaseButton,
     BaseSelect,
+    BaseCheckbox,
+    BaseRadio,
   },
   methods: {
     clickHandler(t) {
