@@ -1,4 +1,4 @@
-# bbbase-ui
+# bbbase-ui ( Base Vue UI Components)
 
 ## Project setup
 ```
